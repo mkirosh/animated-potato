@@ -11,110 +11,48 @@
   </head>
   <body>
     <header>
+      <a href="/index.html">Home</a>
       <a href="/sign_in.html">Sign In</a>
-      <a href="/sign_up.html">Sign Up</a>
     </header>
     <main>
-      <div class='landing'>
-        <section>
-          <h2>Let us ease your routine!</h2>
-          <div class="content">
-            <div>
-              <p>
-                D'jour will allow you to keep track of your tasks and schedule. 
-                You won't have to worry about creating recurring tasks or let your team know that you won't assist to the morning meeting.
-              </p>
-              <p>We take care of it for you</p>
-              <a class='button' href="#">Start now</a>
-            </div>
-            <figure>
-              <img src="./assets/images/workplace-1.jpg" alt="calendar">
-            </figure>
-          </div>
-        </section>
-        <section class='features'>
-          <h3>Features & Plans</h3>
-          <div class="content">
-            <table>
-              <thead>
-                <th>Feature</th>
-                <th>Free</th>
-                <th>Basic</th>
-                <th>Premium</th>
-                <th>Teams</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Task & Schedule Management</td>
-                  <td>Yes</td>
-                  <td>Yes</td>
-                  <td>Yes</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Email Notifications</td>
-                  <td>No</td>
-                  <td>Yes</td>
-                  <td>Yes</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Devices Synchronization</td>
-                  <td>No</td>
-                  <td>Yes</td>
-                  <td>Yes</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>SMS Notifications</td>
-                  <td>No</td>
-                  <td>No</td>
-                  <td>Yes</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Chat</td>
-                  <td>No</td>
-                  <td>No</td>
-                  <td>No</td>
-                  <td>Yes</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <td></td>
-                <td><del>0 USD/Month</del></td>
-                <td>2 USD/Month</td>
-                <td>5 USD/Month</td>
-                <td>10 USD/Month</td>
-              </tfoot>
-            </table>
-          </div>
-        </section>
-        <section class="plataforms">
-          <h3>Plataforms</h3>
-          <div class="content">
-            <article>
-              <figure>
-                <object data="./assets/images/windows-icon.svg"></object>
-                <figcaption>Windows OS logo</figcaption>
-              </figure>
-              <a class="button"href="#">download</a>
-            </article>
-            <article>
-              <figure>
-                <object data="./assets/images/mac-icon.svg"></object>
-                <figcaption>Apple logo</figcaption>
-              </figure>
-              <a class="button"href="#">download</a>
-            </article>
-            <article>
-              <figure>
-                <object data="./assets/images/android-icon.svg"></object>
-                <figcaption>Android logo</figcaption>
-              </figure>
-              <a class="button" href="#">download</a>
-            </article>
-          </div>
+      <div>
+        <section class="sign">
+          <h3>Sign Up</h3>
+          <form action="#" method="post">
+            <label for="email">Email</label>
+            <input type="text" name="eamil" id="eamil">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <label for="confirmation">Confirm Password</label>
+            <input type="password" name="confirmation" id="confirmation"> 
+            <fieldset>
+              <legend>Select Your Plan</legend>
+              <label for="plan">
+                <input type="radio" name="plan" value='free'> 
+                free
+              </label>
+              
+              <label for="plan">
+                <input type="radio" name="plan" value='basic'>
+                Basic
+              </label>
+
+              <label for="plan">
+                <input type="radio" name="plan" value='premium'>
+                Premium
+              </label>
+
+              <label for="plan">
+                <input type="radio" name="plan" value='team'>
+                Team
+              </label>
+
+            </fieldset>
+            <button type="submit">Login</button>
+          </form>
+          <nav>
+            <a href="/index.html">Go back</a>
+          </nav>
         </section>
       </div>
     </main>

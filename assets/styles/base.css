@@ -4,7 +4,7 @@
   --font-color-2: #4f4f4f;
   --secondary-color: #fa9b83;
   --tertiary-color: #f2cc8f;
-  --forth-color: #52978f;
+  --forth-color: #658896;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   color: var(--font-color-2);
@@ -37,6 +37,10 @@ input, select, button, .button {
   height: 2.5rem;
   border-radius: 0.3rem;
   padding: 0.5rem;
+}
+
+input[type='radio'] {
+  height: 1rem;
 }
 
 a.button {
@@ -127,6 +131,7 @@ footer > section {
 footer > section h4 {
   margin-bottom: 1rem;
   font-weight: bold;
+  color: var(--secondary-color);
 }
 
 footer > .legal {
@@ -259,4 +264,49 @@ td, th {
 
 .landing > .plataforms object {
   width: 100%;
+}
+
+.sign {
+  margin-top: 6rem;
+  padding: 4rem;
+  background-color: var(--forth-color);
+  border-radius: 1rem;
+}
+
+.sign > form * {
+  display: block;
+}
+
+.sign h3, .sign label {
+  margin-bottom: 1rem;
+}
+
+.sign label, .sign legend {
+  font-weight: bold;
+}
+
+.sign input[type='text'], .sign input[type='password'], .sign fieldset {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.sign fieldset label { 
+  display: inline-block;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.sign fieldset input[type='radio'] { 
+  position: absolute;
+  left: 0.8rem;
+  bottom: 0.1rem;
+}
+
+.sign nav {
+  padding-top: 2rem;
+}
+
+.sign a {
+  color: var(--secondary-color);
+  font-weight: bold;
 }
