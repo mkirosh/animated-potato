@@ -1,3 +1,5 @@
+/* Normalization and General Styles */
+
 :root {
   --primary-color: #2d505e;
   --font-color-1: #323232;
@@ -33,7 +35,7 @@ ul {
   list-style-type: none;
 }
 
-input, select, button, .button {
+input, select, button {
   height: 2.5rem;
   border-radius: 0.3rem;
   padding: 0.5rem;
@@ -41,17 +43,6 @@ input, select, button, .button {
 
 input[type='radio'] {
   height: 1rem;
-}
-
-a.button {
-  color: white;
-  font-weight: bold;
-  display: inline-block;
-  text-align: center;
-}
-
-a.button:hover {
-  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5 {
@@ -91,6 +82,29 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Button styles */
+
+.button {
+  height: 2.5rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+a.button {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+
+a.button:hover {
+  text-decoration: none;
+}
+
+/* Layout */
+
 header, footer {
   padding: 0.5rem;
   background-color: var(--primary-color);
@@ -102,19 +116,15 @@ header {
   height: 3.5rem;
 }
 
-header > a {
+header a, 
+footer a {
   font-weight: 600;
-}
-
-header > a, footer a {
   display: inline-block;
   color: var(--secondary-color);
 }
 
 footer {
   height: 13rem;
-  display: flex;
-  flex-wrap: wrap;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -122,20 +132,22 @@ footer {
 }
 
 footer > section {
-  flex-shrink: 0;
-  width: 33.33%;
+  width: calc(100% / 3.1);
+  display: inline-block;
   text-align: center;
   padding-top: 1rem;
 }
 
-footer > section h4 {
+footer > section h3 {
   margin-bottom: 1rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--secondary-color);
 }
 
-footer > .legal {
+footer > section.legal {
   width: 100%;
+  padding-top: 2.5rem;
 }
 
 footer > .legal a{
